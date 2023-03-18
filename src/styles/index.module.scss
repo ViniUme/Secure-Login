@@ -1,0 +1,93 @@
+.container {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .form {
+        margin: 0 30px;
+        width: 450px;
+        height: 650px;
+        background-color: var(--main-color);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .icon {
+            margin-top: 50px;
+        }
+
+        .header {
+            margin: 30px 0;
+            font: bold 32px 'Fira Mono', monospace, sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .div {
+            position: relative;
+            width: calc(100% - 100px);
+            margin: 20px 50px;
+
+            .input {
+                padding: 3px 40px 2px 10px;
+                width: 100%;
+                font: lighter 20px 'Fira Mono', monospace, sans-serif;
+                background: transparent;
+                border: none;
+                border-bottom: 3px #ffffffb4 solid;
+                color: #fff;
+                outline: none;
+                
+                
+                &:focus ~ .label, &:not(:placeholder-shown) ~ .label {
+                    transform: translate(0, -30px);
+                    font-size: 15px;
+                    color: #fff;
+                }
+
+                &:focus ~ .line, &:not(:placeholder-shown) ~ .line {
+                    width: 100%;
+                }
+
+                &:focus ~ .view_icon, &:not(:placeholder-shown) ~ .view_icon {
+                    color: #fff;
+                }
+            }
+            
+            .line {
+                position: absolute;
+                bottom: 0;
+                height: 3px;
+                width: 0px;
+                background-color: #fff;
+                transition: 300ms ease-in-out;
+            }
+
+            .label {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                font: 20px 'Fira Mono', monospace, sans-serif;
+                position: absolute;
+                bottom: 4px;
+                left: 10px;
+                color: #ffffffb4;
+                transition: 300ms ease-in-out;
+            }
+
+            .view_icon {
+                position: absolute;
+                margin: auto;
+                inset: 0 10px 0 auto;
+                color: #ffffffb4;
+                transition: 300ms ease-in-out;
+                cursor: pointer;
+            }
+        }
+    }
+}

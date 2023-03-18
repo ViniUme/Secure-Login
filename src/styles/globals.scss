@@ -1,3 +1,28 @@
+:root{
+    --main-color: #008060;
+}
+
+@font-face {
+    font-family: 'Fira Mono';
+    src: url('/fonts/Fira_Mono_Bold.otf') format("opentype");
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Mono';
+    src: url('/fonts/Fira_Mono_Medium.otf') format("opentype");
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Mono';
+    src: url('/fonts/Fira_Mono_Regular.otf') format("opentype");
+    font-weight: lighter;
+    font-display: swap;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -11,9 +36,9 @@ body {
 }
 
 body {
+    min-height: 100vh;
     background: url('/img/background/bg-01.webp') center no-repeat;
     background-size: cover;
-    min-height: 100vh;
 
     &::before{
         content: "";
