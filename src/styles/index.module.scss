@@ -89,5 +89,31 @@
                 cursor: pointer;
             }
         }
+
+        .submit {
+            margin-top: 50px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            background: #fff;
+            color: var(--main-color);
+            letter-spacing: 1px;
+            font: bold 18px 'Fira Mono',  monospace, sans-serif;
+            text-transform: capitalize;
+        }
+
+        .register_text, .register_link {
+            font: 14px 'Fira Mono', monospace, sans-serif;
+        }
+
+        .register_text {
+            margin: 15px 0 6px 0;
+        }
+
+        .register_link {
+            color: var(--contrast-color);
+            font-weight: bold;
+            text-decoration: underline;
+        }
     }
 }

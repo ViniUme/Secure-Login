@@ -1,5 +1,6 @@
 import { ChangeEvent, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import Person2Icon from '@mui/icons-material/Person2';
 import LockIcon from '@mui/icons-material/Lock';
 import VisibilityIcon from '@mui/icons-material/Visibility';
@@ -21,29 +22,34 @@ export default function Index() {
     }
 
     return (
-        <Page title="Home - Login" description="Simple login page">
+        <Page title='Home - Login' description='Simple login page'>
             <main className={styles.container}>
                 <form className={styles.form}>
-                    <Image className={styles.icon} src="/favicon.ico" width={70} height={70} alt="logo"/>
+                    <Image className={styles.icon} src='/favicon.ico' width={70} height={70} alt='logo'/>
 
                     <h1 className={styles.header}>log in</h1>
 
                     <div className={styles.div}>
-                        <input className={styles.input} type="text" value={val.user} id="user" onChange={(element) => InputVal(element)} placeholder=" "/>
-                        <label className={styles.label} htmlFor="user"><Person2Icon/> Username</label>
+                        <input className={styles.input} type='text' value={val.user} id='user' onChange={(element) => InputVal(element)} placeholder=' '/>
+                        <label className={styles.label} htmlFor='user'><Person2Icon/> Username</label>
                         <hr className={styles.line}/>
                     </div>
+
                     <div className={styles.div}>
-                        <input className={styles.input} type={visible ? 'text' : 'password'} value={val.pass} id="pass" onChange={(element) => InputVal(element)} placeholder=" "/>
+                        <input className={styles.input} type={visible ? 'text' : 'password'} value={val.pass} id='pass' onChange={(element) => InputVal(element)} placeholder=' '/>
 
                         {visible ? 
                             <VisibilityIcon className={styles.view_icon} onClick={() => setView(false)}/> :
                             <VisibilityOffIcon className={styles.view_icon} onClick={() => setView(true)}/>
                         }
 
-                        <label className={styles.label} htmlFor="pass"><LockIcon/> Password</label>
+                        <label className={styles.label} htmlFor='pass'><LockIcon/> Password</label>
                         <hr className={styles.line}/>
                     </div>
+
+                    <button className={styles.submit} type='submit'>log in</button>
+                    <span className={styles.register_text}>Do you not have account ?</span>
+                    <Link href="#" className={styles.register_link}>Register now</Link>
                 </form>
             </main>
         </Page>
