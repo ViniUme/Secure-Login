@@ -100,6 +100,12 @@
             letter-spacing: 1px;
             font: bold 18px 'Fira Mono',  monospace, sans-serif;
             text-transform: capitalize;
+            transition: 300ms ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                padding: 10px 50px;
+            }
         }
 
         .register_text, .register_link {
