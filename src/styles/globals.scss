@@ -12,3 +12,18 @@ body {
         background: linear-gradient(145deg, #e4e4e4cd 0%, #cacacacd 33%, #e7e7e7cd 100%), url('/img/thumb/wallpaper-01.webp') no-repeat fixed center / cover;
     }
 }
+
+@media (prefers-color-scheme: dark){
+
+body{
+    color: #fff;
+    background: #1b1c1e;
+    background: linear-gradient(145deg, #1b1c1e 0%, #131415 33%, #252525 100%);
+
+    .background-city{
+        filter: saturate(0);
+        background: linear-gradient(145deg, #1b1c1ecd 0%, #131415cd 33%, #151414cd 100%), url('/img/thumb/wallpaper-01.webp') no-repeat fixed center / cover;
+    }
+}
+
+}
