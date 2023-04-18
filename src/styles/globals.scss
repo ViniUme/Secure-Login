@@ -3,7 +3,12 @@
 @tailwind utilities;
 
 body {
-    color: #fff;
-    background: rgb(228,228,228);
-    background: linear-gradient(145deg, rgba(228,228,228,1) 0%, rgba(215,215,215,1) 33%, rgba(242,242,242,1) 100%);
+    color: #000;
+    background: #e4e4e4;
+    background: linear-gradient(145deg, #ededed 0%, #e2e2e2 33%, #f2f2f2 100%);
+
+    .background-city{
+        filter: saturate(0);
+        background: linear-gradient(145deg, #e4e4e4cd 0%, #cacacacd 33%, #e7e7e7cd 100%), url('/img/thumb/wallpaper-01.webp') no-repeat fixed center / cover;
+    }
 }

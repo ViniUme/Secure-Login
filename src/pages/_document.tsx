@@ -5,6 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body>
+        <div className="w-screen h-screen absolute background-city" />
         <Main />
         <NextScript />
       </body>
