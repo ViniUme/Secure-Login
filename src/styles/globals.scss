@@ -22,6 +22,10 @@ body {
     background: var(--white_1);
 }
 
+.background-preset-1-invert{
+    background: var(--black_1);
+}
+
 @media (prefers-color-scheme: dark){
 
 body{
@@ -37,6 +41,10 @@ body{
 
 .background-preset-1{
     background: var(--black_1);
+}
+
+.background-preset-1-invert{
+    background: var(--white_1);
 }
 
 }
