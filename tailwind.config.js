@@ -14,7 +14,9 @@ module.exports = {
       },
       colors: {
         'white-theme': '#e4e4e4',
-        'black-theme': '#1b1c1e'
+        'black-theme': '#1b1c1e',
+        'light-red-theme': '#be0000',
+        'dark-red-theme': '#ff2832'
       }
     },
   },
