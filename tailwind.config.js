@@ -15,14 +15,17 @@ module.exports = {
       backgroundColor: {
         'white-theme': '#e4e4e4',
         'black-theme': '#1b1c1e',
-        'light-red-theme': '#be0000',
-        'dark-red-theme': '#ff2832'
+        'light-red-theme': '#ff2b2b',
+        'dark-red-theme': '#c60000'
       },
       colors: {
         'white-theme': '#e4e4e4',
         'black-theme': '#1b1c1e',
         'light-red-theme': '#be0000',
         'dark-red-theme': '#ff2832'
+      },
+      fontFamily: {
+        'inter': ['"Inter"', 'sans-serif']
       }
     },
   },
